@@ -2,7 +2,7 @@ import java.time.LocalDateTime;
 
 public class AttendanceGenerator {
     public static void main(String[] args) {
-        Employee e = new Employee("John", 1, 20, "Manager", 10000);
+        Employee e = new Employee("Sudhanshu", 66, 19, "Lead Developer", 55000);
         e.setAttendance(new Attendance(LocalDateTime.of(2019, 1, 1, 9, 0), LocalDateTime.of(2019, 1, 1, 16, 52)), 1, 1);
         e.setAttendance(new Attendance(LocalDateTime.of(2019, 1, 2, 9, 10), LocalDateTime.of(2019, 1, 2, 17, 3)), 1, 2);
         e.setAttendance(new Attendance(LocalDateTime.of(2019, 1, 3, 9, 20), LocalDateTime.of(2019, 1, 3, 16, 41)), 1, 3);

@@ -3,7 +3,6 @@ import java.time.LocalDateTime;
 class Attendance {
     LocalDateTime inTime;
     LocalDateTime outTime;
-
     Attendance(LocalDateTime inTime, LocalDateTime outTime) {
         this.inTime = inTime;
         this.outTime = outTime;
