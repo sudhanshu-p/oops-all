@@ -1,4 +1,5 @@
 import java.time.format.DateTimeFormatter;
+import java.time.Duration;
 
 class Employee {
     String name;
@@ -43,7 +44,7 @@ class Employee {
                     System.out.println ("Day: " + (j + 1));
                     System.out.println ("In Time: " + attendance[i][j].getInTime().format(formatter));
                     System.out.println ("Out Time: " + attendance[i][j].getOutTime().format(formatter));
-                    System.out.println ("Working Hours: " + (attendance[i][j].getOutTime().getHour() - attendance[i][j].getInTime().getHour()));
+                    System.out.println ("Working Hours: " + Duration.between(attendance[i][j].getInTime(), attendance[i][j].getOutTime()).toHours() + " hours" + " " + (Duration.between(attendance[i][j].getInTime(), attendance[i][j].getOutTime()).toMinutes() % 60) + " minutes");
                     System.out.println ("-------------------------------");
                     workingDays ++;
                 }
